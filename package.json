@@ -1,0 +1,10 @@
+{
+  "name": "newman-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "newman run postman/collections/jsonplaceholder_collection.json -e postman/environments/environment.json --reporters cli,html,junit --reporter-html-export newman/html/index.html --reporter-junit-export newman/junit/test-results.xml"
+  },
+  "devDependencies": {
+    "newman": "^6.2.1"
+  }
+}
